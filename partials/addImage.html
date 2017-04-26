@@ -1,0 +1,19 @@
+<form name="addImage" novalidate ng-submit="vm.update(addImage.$valid)">
+  <div class="form-group">
+    <label for="imageInput">Category</label>
+    <input ng-model="vm.item.category" type="url" class="form-control" placeholder="Category">
+  </div>
+  <div class="form-group">
+    <label for="titleInput">Title</label>
+    <input ng-model="vm.item.title" type="title" class="form-control" placeholder="Title">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">Image Description</label>
+    <textarea ng-model="vm.item.description" type="textarea" class="form-control" rows="3" id="exampleInputFile"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="imageInput">Image</label>
+    <input ng-model="vm.item.url" type="url" class="form-control" placeholder="Image URL">
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
